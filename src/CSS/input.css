@@ -1,0 +1,15 @@
+.midBox {
+    display: flex;
+    height: 33.3%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputBox {
+    height: 20px;
+    width: 200px;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: inset  2px 2px grey;
+}
