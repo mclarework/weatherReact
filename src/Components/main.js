@@ -9,7 +9,7 @@ const Main = (props) => {
         <div className = "main">
             <Title title = {props.title}/>
             <Input userInput = {props.userInput} handleChange = {props.handleChange} handleKeyPress = {props.handleKeyPress}/>
-            <Response cityData = {props.cityData} activeLocation = {props.activeLocation}/>
+            <Response cityData = {props.cityData}/>
         </div>
     )
 }

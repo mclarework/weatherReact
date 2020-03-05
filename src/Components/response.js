@@ -6,13 +6,13 @@ const Response = (props) => {
         <div className = "responseBox">
             {props.cityData !== null ? (
                 <div>
-                    <h3>{props.activeLocation}</h3>
+                    <h3>{props.cityData.location}</h3>
                     <h5>Summary</h5>
-                    <p>{props.cityData.currently.summary}</p>
+                    <p>{props.cityData.data.currently.summary}</p>
                     <h5>Precipitation Percentage</h5>
-                    <p>{props.cityData.currently.precipProbability}</p>
+                    <p>{props.cityData.data.currently.precipProbability}</p>
                     <h3>Temperature</h3>
-                    <p>{((props.cityData.currently.temperature-32)*(5/9)).toFixed(2)}</p>
+                    <p>{((props.cityData.data.currently.temperature-32)*(5/9)).toFixed(2)}</p>
                 </div>
             ):(
                 null
