@@ -20,7 +20,7 @@ class App extends Component {
     if (event.keyCode === 13) {
       if (this.state.userInput !== "") {
         const data = await fetch(
-          `https://dry-beyond-13373.herokuapp.com/weather?address=${this.state.userInput}`
+          `https://cors-anywhere.herokuapp.com/https://dry-beyond-13373.herokuapp.com/weather?address=${this.state.userInput}`
         );
         const response = await data.json()
         this.setState({cityData:response, userInput:""})
