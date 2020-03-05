@@ -1,10 +1,11 @@
 import React, { Component } from "react";
-import Main from "./Components/main.js";
+import Main from "./Components/main.js"
 import "./CSS/app.css";
 
 class App extends Component {
   state = {
     title: "Weather App",
+    subtitle: "Enter a location name in the bar below and seach for the weather there...",
     userInput: "",
     cityData: null
   };
@@ -21,7 +22,6 @@ class App extends Component {
           `http://localhost:3005/weather?address=${this.state.userInput}`
         );
         const response = await data.json()
-        console.log(response)
         this.setState({cityData:response, userInput:""})
         
       }
@@ -34,6 +34,7 @@ class App extends Component {
       <div>
         <Main
           title={this.state.title}
+          subtitle={this.state.subtitle}
           userInput={this.state.userInput}
           handleChange={this.handleChange}
           handleKeyPress={this.handleKeyPress}

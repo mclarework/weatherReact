@@ -7,7 +7,7 @@ import "../CSS/main.css"
 const Main = (props) => {
     return (
         <div className = "main">
-            <Title title = {props.title}/>
+            <Title title = {props.title} subtitle={props.subtitle}/>
             <Input userInput = {props.userInput} handleChange = {props.handleChange} handleKeyPress = {props.handleKeyPress}/>
             <Response cityData = {props.cityData}/>
         </div>
