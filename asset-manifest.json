@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/mclarework/weatherReact.git/static/css/main.4ea708ab.chunk.css",
+    "main.js": "/mclarework/weatherReact.git/static/js/main.9807f779.chunk.js",
+    "main.js.map": "/mclarework/weatherReact.git/static/js/main.9807f779.chunk.js.map",
+    "runtime-main.js": "/mclarework/weatherReact.git/static/js/runtime-main.6de804d2.js",
+    "runtime-main.js.map": "/mclarework/weatherReact.git/static/js/runtime-main.6de804d2.js.map",
+    "static/js/2.48ed7a64.chunk.js": "/mclarework/weatherReact.git/static/js/2.48ed7a64.chunk.js",
+    "static/js/2.48ed7a64.chunk.js.map": "/mclarework/weatherReact.git/static/js/2.48ed7a64.chunk.js.map",
+    "index.html": "/mclarework/weatherReact.git/index.html",
+    "precache-manifest.5dbd1afb0f84eff5cb39a1e94d872f68.js": "/mclarework/weatherReact.git/precache-manifest.5dbd1afb0f84eff5cb39a1e94d872f68.js",
+    "service-worker.js": "/mclarework/weatherReact.git/service-worker.js",
+    "static/css/main.4ea708ab.chunk.css.map": "/mclarework/weatherReact.git/static/css/main.4ea708ab.chunk.css.map",
+    "static/js/2.48ed7a64.chunk.js.LICENSE.txt": "/mclarework/weatherReact.git/static/js/2.48ed7a64.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6de804d2.js",
+    "static/js/2.48ed7a64.chunk.js",
+    "static/css/main.4ea708ab.chunk.css",
+    "static/js/main.9807f779.chunk.js"
+  ]
+}
