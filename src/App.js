@@ -7,7 +7,8 @@ class App extends Component {
     title: "Weather App",
     subtitle: "Enter a location name in the bar below and seach for the weather there...",
     userInput: "",
-    cityData: null
+    cityData: null,
+    summary:[]
   };
 
   handleChange = event => {
@@ -19,7 +20,7 @@ class App extends Component {
     if (event.keyCode === 13) {
       if (this.state.userInput !== "") {
         const data = await fetch(
-          `http://localhost:3005/weather?address=${this.state.userInput}`
+          `https://dry-beyond-13373.herokuapp.com/weather?address=${this.state.userInput}`
         );
         const response = await data.json()
         this.setState({cityData:response, userInput:""})
