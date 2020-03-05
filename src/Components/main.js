@@ -8,8 +8,8 @@ const Main = (props) => {
     return (
         <div className = "main">
             <Title title = {props.title}/>
-            <Input/>
-            <Response/>
+            <Input userInput = {props.userInput} handleChange = {props.handleChange} handleKeyPress = {props.handleKeyPress}/>
+            <Response cityData = {props.cityData} activeLocation = {props.activeLocation}/>
         </div>
     )
 }

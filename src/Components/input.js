@@ -1,10 +1,10 @@
 import React from "react";
 import "../CSS/input.css";
 
-const Input = () => {
+const Input = (props) => {
   return (
     <div className = "midBox">
-      <input className = "inputBox" placeholder="Enter City Name"></input>
+      <input className = "inputBox" placeholder="Enter City Name" onChange={props.handleChange} onKeyDown={props.handleKeyPress}></input>
     </div>
   );
 };
