@@ -1,4 +1,8 @@
 body {
+    margin:0
+}
+
+.mainBody {
     display: flex;
     height: 100vh;
     width: 100vw;
@@ -6,5 +10,10 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    background-image: linear-gradient(135deg, purple, purple, rgb(201, 93, 201));
+    background-image: linear-gradient(135deg, black, darkblue, orange);
+    /* background-image: url("../Images/Sunny.jpeg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -20;
 }

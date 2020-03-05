@@ -5,8 +5,7 @@ const Response = (props) => {
     return (
         <div className = "responseBox">
             {props.cityData !== null ? (
-                <div>
-                    {console.log(props.cityData.data.minutely)}
+                <div>   
                     <h3 className="loc">{props.cityData.location}</h3>
                     <h5 className="sub">Summary</h5>
                     <p className="return">{props.cityData.data.daily.summary}</p>

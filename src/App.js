@@ -8,7 +8,8 @@ class App extends Component {
     subtitle: "Enter a location name in the bar below and seach for the weather there...",
     userInput: "",
     cityData: null,
-    summary:[]
+    summary: null,
+    image: "../Images/rain.gif"
   };
 
   handleChange = event => {
@@ -20,11 +21,11 @@ class App extends Component {
     if (event.keyCode === 13) {
       if (this.state.userInput !== "") {
         const data = await fetch(
-          `https://cors-anywhere.herokuapp.com/https://dry-beyond-13373.herokuapp.com/weather?address=${this.state.userInput}`
+          `https://dry-beyond-13373.herokuapp.com/weather?address=${this.state.userInput}`
         );
         const response = await data.json()
+        console.log(response.data)
         this.setState({cityData:response, userInput:""})
-        
       }
         this.setState({ userInput: "" });
       }
@@ -32,7 +33,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className = "mainBody">
         <Main
           title={this.state.title}
           subtitle={this.state.subtitle}
@@ -40,6 +41,8 @@ class App extends Component {
           handleChange={this.handleChange}
           handleKeyPress={this.handleKeyPress}
           cityData={this.state.cityData}
+          summary = {this.state.summary}
+          image = {this.state.image}
         />
       </div>
     );
