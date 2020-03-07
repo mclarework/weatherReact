@@ -5,8 +5,8 @@
     align-items: center;
     flex-direction: column;
     position: relative;
-    background-image: url("../Images/rain.gif");
+    /* background-image: url("../Images/Snow.gif");
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: 5;
+    z-index: 5; */
 }

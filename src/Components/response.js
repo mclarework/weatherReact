@@ -1,18 +1,21 @@
 import React from "react"
+import Temp from "../Components/temp"
+import Location from "../Components/location"
+import Current from "../Components/current"
+import Hourly from "../Components/hourly"
+import Daily from "../Components/daily"
 import "../CSS/response.css"
 
 const Response = (props) => {
     return (
         <div className = "responseBox">
             {props.cityData !== null ? (
-                <div>   
-                    <h3 className="loc">{props.cityData.location}</h3>
-                    <h5 className="sub">Summary</h5>
-                    <p className="return">{props.cityData.data.daily.summary}</p>
-                    <h5 className="sub">Precipitation Percentage</h5>
-                    <p className="return">{props.cityData.data.currently.precipProbability*100}%</p>
-                    <h3 className="sub">Temperature</h3>
-                    <p className="return">{((props.cityData.data.currently.temperature-32)*(5/9)).toFixed(2)}°C</p>
+                <div className = "active">   
+                    <Temp temp = {props.cityData.data.currently.temperature}/>
+                    <Location location = {props.cityData.location}/>
+                    <Current info = {props.cityData.data.currently} time = {props.time}/>
+                    <Hourly data = {props.hourly}/>
+                    <Daily data = {props.daily}/>
                 </div>
             ):(
                 null

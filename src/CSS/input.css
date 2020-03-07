@@ -1,4 +1,4 @@
-.midBox {
+.inputBox {
     display: flex;
     height: 10%;
     width: 100%;
@@ -6,7 +6,7 @@
     align-items: center;
 }
 
-.inputBox {
+.input {
     height: 20px;
     width: 200px;
     text-align: center;

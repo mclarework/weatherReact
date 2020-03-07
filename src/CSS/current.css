@@ -1,0 +1,21 @@
+.currentBox {
+    height: 25%;
+    width: 100%;
+    border-top-style: solid;
+    border-color: white;
+}
+
+.time {
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
+
+.iconAndRain {
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+

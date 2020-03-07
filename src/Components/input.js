@@ -3,8 +3,9 @@ import "../CSS/input.css";
 
 const Input = (props) => {
   return (
-    <div className = "midBox">
-      <input className = "inputBox" placeholder="Enter Location Name" onChange={props.handleChange} onKeyDown={props.handleKeyPress} value={props.userInput}></input>
+    <div className = "inputBox">
+      <input className = "input" placeholder="Search...
+      " onChange={props.handleChange} onKeyDown={props.handleKeyPress} value={props.userInput}></input>
     </div>
   );
 };

@@ -1,0 +1,12 @@
+.temp {
+    display: flex;
+    height: 15%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.tempText {
+    font-size: 60px;
+    color: white
+}
